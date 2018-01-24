@@ -1,6 +1,6 @@
 /*****
 *Author: Ivan gomez Luis
-*Name: AreaOfATrainfule.java
+*Name: AreaOfARectangule.java
 *This program prints in display the area of a triangule.
 *****/
 import java.util.Scanner;
