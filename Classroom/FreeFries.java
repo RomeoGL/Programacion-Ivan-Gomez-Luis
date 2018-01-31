@@ -7,7 +7,7 @@ IF the fans win free french fries
 import javax.swing.JOptionPane; //para utilizar modo grafico GUI
 public class FreeFries
 {
-  public static void main(String[]args)
+  public static void main(String[]args) 
   {
     int homePoints; //points scored by home team
     int opponentPoints; //points scored by opposing team
@@ -18,7 +18,6 @@ public class FreeFries
     if (homePoints>opponentPoints && homePoints >= 100)
     {
       JOptionPane.showMessageDialog(null, "A free order of French Fries for White Tigers Fans");
-
     }
   }
 }
