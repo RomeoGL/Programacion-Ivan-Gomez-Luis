@@ -1,7 +1,7 @@
 /*
 Ivan Gomez Luis
 WinemakersAssociation.java
-
+This program calculates how much a farmer will be paid
 Exercise  2.7
 */
 import javax.swing.JOptionPane;

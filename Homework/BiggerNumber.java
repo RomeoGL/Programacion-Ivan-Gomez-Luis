@@ -2,6 +2,7 @@
 Ivan Gomez Luis
 BiggerNumber.java
 This program calculates which is the highest number
+Exercise 2.5
 */
 import javax.swing.JOptionPane;
 public class BiggerNumber
