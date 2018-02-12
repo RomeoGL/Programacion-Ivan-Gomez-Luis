@@ -1,5 +1,8 @@
 /*
-Incompleto
+Ivan Gomez Luis
+NumbersBetween1And100.java
+Shows the numbers between 0 and 100
+Exercise 3.5
 */
 import javax.swing.JOptionPane;
 public class NumbersBetween1And100

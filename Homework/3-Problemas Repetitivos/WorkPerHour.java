@@ -2,7 +2,6 @@
 WorkPerHour.java
 This program calculates how much an employee is paid
 Exercise  3.6
-
 */
 import javax.swing.JOptionPane;
 public class WorkPerHour

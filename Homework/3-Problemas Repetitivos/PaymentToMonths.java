@@ -1,4 +1,8 @@
 /*
+Ivan Gomez Luis
+PaymentToMonths.java
+3.8
+This program shows what a person will pay for a lon
 */
 import javax.swing.JOptionPane;
 public class PaymentToMonths
