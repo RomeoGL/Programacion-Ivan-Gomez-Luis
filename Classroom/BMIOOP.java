@@ -52,5 +52,35 @@ public class BMIOOP
     double bmi=this.weigth*KILOGRAMS_PERPOUND/((this.heigth*METERS_PER_INCH)*(this.heigth*METERS_PER_INCH));
     return Math.round(bmi*100)/100;
   }
+  //metohd to evaluate BMI and return a message
+  public String getStatus()
+  {
+    double bmi= getBmi();
+    if (bmi<16)
+    {
+      return "You are seriously underweight";
+    }
+    else if (bmi<18)
+    {
+      return "You are underweight";
+    }
+    else if (bmi<24)
+    {
+      return "You are normal weight";
+    }
+    else if (bmi<29)
+    {
+      return "You are overweight";
+    }
+    else if (bmi<35)
+    {
+      return "You are  seriusly overweight";
+    }
+    else
+    {
+      return "You are gravely overweight";
+    }
+  }
+
 
 }
