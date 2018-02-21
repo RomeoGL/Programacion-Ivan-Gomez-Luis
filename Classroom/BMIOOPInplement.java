@@ -14,7 +14,7 @@ public class BMIOOPInplement
     int i=0; //contador, detiene el ciclo
     do
     {
-    opc=Integer.parseInt(JOptionPane.showInputDialog(null, "*******Menu****** \n1.-Set name \n2.-Set Age \n3.- Set weight \n4.-Set height \n5.-Calculate BMI \n6.-Evaluate BMI \n7.-Exit" , "Option" , JOptionPane.WARNING_MESSAGE));
+      opc=Integer.parseInt(JOptionPane.showInputDialog(null, "*******Menu****** \n1.-Set name \n2.-Set Age \n3.- Set weight \n4.-Set height \n5.-Calculate BMI \n6.-Evaluate BMI \n7.-Exit" , "Option" , JOptionPane.WARNING_MESSAGE));
 
       switch(opc)
       {
@@ -34,30 +34,7 @@ public class BMIOOPInplement
         person.getBmi();
         break;
         case 6:
-        if (person.getBmi()<16)
-        {
-          JOptionPane.showMessageDialog(null, person.getName() + " At your " + person.getAge() + " years \nYou are seriously underweight" , "result" , JOptionPane.ERROR_MESSAGE);
-        }
-        else if (person.getBmi()<18)
-        {
-          JOptionPane.showMessageDialog(null, person.getName() + " At your " + person.getAge() + " years \nYou are underweight" , "result" , JOptionPane.ERROR_MESSAGE);
-        }
-        else if (person.getBmi()<24)
-        {
-          JOptionPane.showMessageDialog(null, person.getName() + " At your " + person.getAge() + " years \nYou are normal weight" , "result" , JOptionPane.ERROR_MESSAGE);
-        }
-        else if (person.getBmi()<29)
-        {
-          JOptionPane.showMessageDialog(null, person.getName() + " At your " + person.getAge() + " years \nYou are overweight" , "result" , JOptionPane.ERROR_MESSAGE);
-        }
-        else if (person.getBmi()<35)
-        {
-          JOptionPane.showMessageDialog(null, person.getName() + " At your " + person.getAge() + " years \nYou are  seriusly overweight" , "result" , JOptionPane.ERROR_MESSAGE);
-        }
-        else
-        {
-          JOptionPane.showMessageDialog(null, person.getName() + " At your " + person.getAge() + " years \nYou are gravely overweight" , "result" , JOptionPane.ERROR_MESSAGE);
-        }
+        person.getStatus();
         break;
         case 7:
         i=i+1;
@@ -67,6 +44,7 @@ public class BMIOOPInplement
         JOptionPane.showMessageDialog(null, "Error, option invalid" , "Error" , JOptionPane.ERROR);
         break;
       }
-  }while(i!=1);
+    }
+    while(i!=1);
   }
 }

@@ -56,31 +56,30 @@ public class BMIOOP
   public String getStatus()
   {
     double bmi= getBmi();
-    if (bmi<16)
+    if (getBmi()<16)
     {
-      return "You are seriously underweight";
+      JOptionPane.showMessageDialog(null, getName() + " At your " + getAge() + " years \nYou are seriously underweight" , "result" , JOptionPane.ERROR_MESSAGE);
     }
-    else if (bmi<18)
+    else if (getBmi()<18)
     {
-      return "You are underweight";
+      JOptionPane.showMessageDialog(null, getName() + " At your " + getAge() + " years \nYou are underweight" , "result" , JOptionPane.ERROR_MESSAGE);
     }
-    else if (bmi<24)
+    else if (getBmi()<24)
     {
-      return "You are normal weight";
+      JOptionPane.showMessageDialog(null, getName() + " At your " + getAge() + " years \nYou are normal weight" , "result" , JOptionPane.ERROR_MESSAGE);
     }
-    else if (bmi<29)
+    else if (getBmi()<29)
     {
-      return "You are overweight";
+      JOptionPane.showMessageDialog(null, getName() + " At your " + getAge() + " years \nYou are overweight" , "result" , JOptionPane.ERROR_MESSAGE);
     }
-    else if (bmi<35)
+    else if (getBmi()<35)
     {
-      return "You are  seriusly overweight";
+      JOptionPane.showMessageDialog(null, getName() + " At your " + getAge() + " years \nYou are  seriusly overweight" , "result" , JOptionPane.ERROR_MESSAGE);
     }
     else
     {
-      return "You are gravely overweight";
+      JOptionPane.showMessageDialog(null, getName() + " At your " + getAge() + " years \nYou are gravely overweight" , "result" , JOptionPane.ERROR_MESSAGE);
     }
+    return getName();
   }
-
-
 }
