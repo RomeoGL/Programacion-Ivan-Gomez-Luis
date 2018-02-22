@@ -10,6 +10,7 @@ public class PasswordTest
     int may=0;
     int num=0;
     int min=0;
+    opc1
     test=new Password();
     test.setPassword(JOptionPane.showInputDialog("Ingresa la contraseña"));
     a=test.getPassword().length();
