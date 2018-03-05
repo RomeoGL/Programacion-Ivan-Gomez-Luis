@@ -1,4 +1,6 @@
 /*
+Ivan GOmez Luis
+Person
 */
 public class Person
 {

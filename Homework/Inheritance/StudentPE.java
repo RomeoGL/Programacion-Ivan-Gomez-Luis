@@ -1,3 +1,7 @@
+/*
+Ivan Gomez Luis
+StudentPE
+*/
 public class StudentPE extends Person
 {
   private String program;

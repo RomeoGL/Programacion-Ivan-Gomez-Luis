@@ -1,3 +1,8 @@
+/*
+Ivan Gomez Luis
+StaffPE
+*/
+
 public class StaffPE extends Person
 {
   private String school;

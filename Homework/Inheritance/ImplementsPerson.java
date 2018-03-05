@@ -1,3 +1,8 @@
+/*
+Ivan Gomez Luis
+ImplementsPerson
+*/
+
 import javax.swing.*;
 public class ImplementsPerson
 {
@@ -17,5 +22,5 @@ public class ImplementsPerson
     else
     JOptionPane.showMessageDialog(null, "Error");
   }
-  
+
 }
