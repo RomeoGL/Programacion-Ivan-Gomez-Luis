@@ -5,12 +5,12 @@ This is a superclas
 */
 import java.util.Date;
 import javax.swing.*;
-public class GeometricObject
+public abstract class GeometricObject
 {
  private String color;
  private Boolean filled;//Rellenado
  private Date dateCreated;//Fecha de creacion
-
+ //Metodo abstracto es aquel que se hereda del padre y se utiliza de la manera que  sea mas adecuada en el objeto
  //Methods
  public GeometricObject()
  {
@@ -44,4 +44,10 @@ public class GeometricObject
   {
       return this.dateCreated;
   }
+  //Definir el metodo abstracto que puede utilizar
+  //circle o rectangle
+  public abstract double getArea();
+
+  public abstract double getPerimeter();
+
 }
