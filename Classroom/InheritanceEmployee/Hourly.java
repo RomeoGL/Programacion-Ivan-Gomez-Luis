@@ -1,6 +1,6 @@
 public class Hourly extends Employee
 {
-  private double HourlyRate;
+  private double HourlyRate=150;
   private double hours=0.0;
 
   public Hourly(String name, double hours)
@@ -8,13 +8,14 @@ public class Hourly extends Employee
     super(name);
     this.hours=hours;
   }
-  public double getPay()
+  @Override
+  public  double getPay()
   {
-    return 0.0;
+    double pay=HourlyRate*hours;
+    return pay;
   }
   public void addHours(double hours)
   {
-    this.hours=hours;
+    this.hours+=hours;
   }
-
 }

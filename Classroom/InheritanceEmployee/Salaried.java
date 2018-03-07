@@ -7,9 +7,10 @@ public class Salaried extends Employee
     super(name);
     this.salary=salary;
   }
+  @Override
   public double getPay()
   {
-    return 0.0;//Hard code
+    return this.salary;
   }
   public void printPay(int date)
   {
