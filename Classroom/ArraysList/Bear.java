@@ -1,7 +1,6 @@
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
 public class Bear
-
 {
   private final String MAKER; //Bear's manufacturer
   private final String TYPE; //type of Bear
@@ -16,9 +15,10 @@ public class Bear
   public static void main(String[] args)
   {
     ArrayList<Bear> teddyBearStore=new ArrayList<Bear>();
-    int opc=Integer.parseInt(JOptionPane.showInputDialog(null, ".......MENU...... \n 1.- Add Bear \n 2.-Search \n 3.- Remove \n 4.- Show all \n 5.-Exit"));
+    int opc;
     do
     {
+      opc=Integer.parseInt(JOptionPane.showInputDialog(null, ".......MENU...... \n 1.- Add Bear \n 2.-Search \n 3.- Remove \n 4.- Show all \n 5.-Exit"));
       switch(opc)
       {
         case 1: String maker=JOptionPane.showInputDialog("Maker?");
@@ -28,7 +28,7 @@ public class Bear
         break;
         case 2:
         int index=Integer.parseInt(JOptionPane.showInputDialog("Index?"));
-        JOptionPane.showMessageDialog(null, teddyBearStore.get(index));
+        teddyBearStore.get(index).display();
         break;
         case 3:
         index=Integer.parseInt(JOptionPane.showInputDialog("Index to remove?"));
@@ -54,7 +54,6 @@ public class Bear
         JOptionPane.showMessageDialog(null, "Error, aprende a leer");
         break;
       }
-      opc=Integer.parseInt(JOptionPane.showInputDialog(null, ".......MENU...... \n 1.- Add Bear \n 2.-Search \n 3.- Remove \n 4.- Show all \n 5.-Exit"));
     }
     while(opc!=5);
   }
